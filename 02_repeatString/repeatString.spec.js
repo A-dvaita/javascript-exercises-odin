@@ -1,10 +1,10 @@
 const repeatString = require('./repeatString')
 
 describe('repeatString', () => {
-  test('repeats the string', () => {
+  test.skip('repeats the string', () => {
     expect(repeatString('hey', 3)).toEqual('heyheyhey');
   });
-  test.skip('repeats the string many times', () => {
+  test('repeats the string many times', () => {
     expect(repeatString('hello', 10)).toEqual('hellohellohellohellohellohellohellohellohellohello');
   });
   test.skip('repeats the string 1 times', () => {
@@ -12,7 +12,7 @@ describe('repeatString', () => {
   });
   test.skip('repeats the string 0 times', () => {
     expect(repeatString('bye', 0)).toEqual('');
-  });
+  }); 
   test.skip('does not use the built-in String repeat method', () => {
     /* Even though there is a built-in String repeat method,
       in this exercise specifically, we want you to practise using loops */
