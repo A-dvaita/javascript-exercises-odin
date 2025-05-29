@@ -16,20 +16,28 @@ const multiply = function(array) {
   return array.reduce((product, current) => product * current)
 };
 
-const power = function(a, b) {
+const power = function (a, b) {
   let pow = 1;
-  if(b === 0){
-    return pow = 1;
+  if (b === 0) {
+    return (pow = 1);
   } else {
-  for(let i = 0; i < b; i++){
-    pow *= a;
-  }
-  }
+    for (let i = 0; i < b; i++) {
+      pow *= a;
+    }
   return pow;
+  }
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+	let fact = 1;
+  if(a === 0){
+    return fact;
+  } else {
+    for(let i = a; i>0; i--){
+      fact *= i;
+    }
+    return fact;
+  }
 };
 
 // Do not edit below this line
