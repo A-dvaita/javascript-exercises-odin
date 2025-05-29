@@ -9,11 +9,12 @@ const subtract = function(a, b) {
 };
 
 const sum = function() {
-	
+
 };
 
-const multiply = function() {
-
+const multiply = function(a, b) {
+  let product = Number(a) * Number(b);
+  return product;
 };
 
 const power = function() {
