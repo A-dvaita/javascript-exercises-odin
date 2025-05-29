@@ -16,8 +16,16 @@ const multiply = function(array) {
   return array.reduce((product, current) => product * current)
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+  let pow = 1;
+  if(b === 0){
+    return pow = 1;
+  } else {
+  for(let i = 0; i < b; i++){
+    pow *= a;
+  }
+  }
+  return pow;
 };
 
 const factorial = function() {
